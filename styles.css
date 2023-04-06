@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 30px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.elemento {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para El Alas de Fénix */
+.alas_fenix {
+    justify-content: center;
+    align-items: center;
+}
+
+.alas_fenix .elemento {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para La Estrella Polar */
+.estrella_polar {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.estrella_polar .elemento {
+    background-color: #2196F3;
+    color: white;
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Estilos para El Tren Expreso */
+.tren_expreso {
+    flex-wrap: wrap;
+}
+
+.tren_expreso .elemento {
+    background-color: #FF9800;
+    color: white;
+    width: calc(33.333% - 20px);
+}
+
+/* Estilos para El Baile de las Cajas */
+.baile_cajas #elem1 {
+    order: 3;
+    background-color: #FF4081;
+}
+
+.baile_cajas #elem2 {
+    order: 1;
+    background-color: #3F51B5;
+}
+
+.baile_cajas #elem3 {
+    order: 2;
+    background-color: #00BCD4;
+}
+
+/* Estilos para El Acordeón Mágico */
+.acordeon_magico #elemA {
+    flex: 1;
+    background-color: #009688;
+}
+
+.acordeon_magico #elemB {
+    flex: 2;
+    background-color: #FF5722;
+}
+
+.acordeon_magico #elemC {
+    flex: 1;
+    background-color: #795548;
+}
+
+/* Estilos para El Camino del Río */
+.camino_rio {
+    justify-content: space-around;
+}
+
+.camino_rio #rioA {
+    align-self: flex-start;
+    background-color: #673AB7;
+}
+
+.camino_rio #rioB {
+    align-self: center;
+    background-color: #9C27B0;
+}
+
+.camino_rio #rioC {
+    align-self: flex-end;
+    background-color: #E91E63;
+}
+
+/* Estilos para La Serpiente Enrollada */
+.serpiente_enrollada {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.serpiente_enrollada .elemento {
+    background-color: #F06292;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Estilos para El Laberinto de Flex */
+.laberinto_flex {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subcontenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: #2196F3;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.subcontenedor .elemento {
+    background-color: #FFC107;
+    margin: 5px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Estilos para La Montaña Rusa */
+.montaña_rusa {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.montaña_rusa .elemento {
+    background-color: #FF5722;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    flex: 1;
+    min-width: 100px;
+}
+
+/* Media Queries para adaptar el diseño según el tamaño de la pantalla */
+@media (min-width: 480px) {
+    .montaña_rusa .elemento {
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .montaña_rusa .elemento {
+        min-width: calc(33.3333% - 10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .montaña_rusa .elemento {
+        min-width: calc(25% - 10px);
+    }
+}
+
+/* Estilos para El Dominó Mágico */
+.domino_magico {
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+/* Estilos para La Cascada Flex */
+.cascada_flex {
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenido {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para La Cuadrícula Galáctica */
+.cuadricula_galactica {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta_galactica {
+    background-color: #9C27B0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+/* Media Queries para adaptar el diseño según el tamaño de la pantalla */
+@media (min-width: 480px) {
+    .tarjeta_galactica {
+        flex: 0 0 calc(33.3333% - 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .tarjeta_galactica {
+        flex: 0 0 calc(25% - 10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarjeta_galactica {
+        flex: 0 0 calc(20% - 10px);
+    }
+}
+
+
